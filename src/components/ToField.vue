@@ -7,7 +7,6 @@
               class="form__input-bottom form__input-to"
               v-model="to.query"
               @input="filterTo"
-              @blur="toBlur"
               placeholder="To"
               autocomplete="off"
             >

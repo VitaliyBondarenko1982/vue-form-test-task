@@ -7,7 +7,6 @@
         class="form__input-bottom form__input-from"
         v-model="from.query"
         @input="filterFrom"
-        @blur="fromBlur"
         placeholder="From"
         autocomplete="off"
       >

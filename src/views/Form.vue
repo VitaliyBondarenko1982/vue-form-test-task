@@ -10,14 +10,12 @@
           v-bind:filterFrom="this.filterFrom"
           v-bind:clickFromField="this.clickFromField"
           v-bind:clickReverse="this.clickReverse"
-          v-bind:fromBlur="this.fromBlur"
         />
         <ToField
           v-bind:isError="isError"
           v-bind:to="to"
           v-bind:filterTo="this.filterTo"
           v-bind:clickToField="this.clickToField"
-          v-bind:toBlur="this.toBlur"
         />
         <div
           class="form__field depart"
@@ -118,14 +116,6 @@ export default {
       this.highlighted.from = '';
       this.highlighted.to = '';
       this.isError = false;
-    },
-
-    fromBlur() {
-      this.from.isVisibleCities = false;
-    },
-
-    toBlur() {
-      this.to.isVisibleCities = false;
     },
 
     filterFrom() {
